@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meldung Erstellen</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+        <script defer src="js/header.js"></script>
+        <script defer src="js/map_create.js"></script>
+        <script defer src="js/footer.js"></script>
+        
+    
+</head>
+<body background="img/back.jpg" class="preview-background">
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <div id="header"></div>
+    <div class="gridIndex">
+        <div>
+        <h3 class="startseite">Wählen Sie den Ort auf der Karte aus</h3>
+        <div id="map" class="mapStyle"></div>
+        </div>
+        <div class ="meldungen_scroll_container_erstellen">
+            <form id="form" action="zusammenfassung.html" method="GET" enctype="multipart/form-data">
+            <div class="info">
+                <h3 class="erstellen_überschrift">in welche Kategorie fällt der Vorfall?</h3>
+                <label class="boxes" ><input class="boxes-content" type = "radio" name="Kategorie der Meldung" id="radio-defekte" value="Defekte und Schäden" onclick="detectButton()"> Defekte und Schäden </label>
+                <label class="boxes" ><input class="boxes-content" type = "radio" name="Kategorie der Meldung" id="radio-verunreinigungen" value="Verunreinigung" onclick="detectButton()"> Verunreinigung </label>
+                <br>
+                <label class="boxes" ><input class="boxes-content" type = "radio" name="Kategorie der Meldung" id="radio-parken" value="Parkverstoß melden" onclick="detectButton()"> Parkverstoß </label>
+                <label class="boxes" ><input class="boxes-content" type = "radio" name="Kategorie der Meldung" id="radio-sonstige" value="Sonstige" onclick="detectButton()" checked> Sonstige </label>
+                <input name="Kategorie" type="text" id="div-box" class="smallfield" placeholder="Kategorie" value="Sonstige" hidden readonly>
+            </div>
+            <div class="info">
+                <h3 class="erstellen_überschrift">Beschreibung - Beschreiben Sie den Vorfall</h3>
+                <textarea name="Beschreibung" type="text" class="beschreibung" id="div-description" maxlength="255" placeholder="Geben Sie eine Beschreibung ein. Maximal 255 Zeichen" title="Bitte geben Sie eine Beschreibung ein"required></textarea>
+            </div>
+    
+             <div class="info_bild">
+                <h3 class="erstellen_überschrift">Laden Sie ein Bild von dem Vorfall hoch</h3>
+                <input class="input_file" name="Foto anzeigen" type="file" id="image_input" accepts="image/png, image/jpg" multiple="2" onchange="encodeController(this)"/>
+                <br>
+                <text class="image-description">Maximal: 2MB Dateityp: PNG/JPG/JPEG</text>
+                <br>
+                <br>
+                <div id="display_image" class="display_image_style"></div>
+                <input name="fotoCrypted" type="text" id="fotoCrypted" value="" hidden readonly/>
+                <script src="js/encodeImage.js"></script>
+                <script src="js/insertImage.js"></script>
+            </div>
+            <div class="info">
+                <h3 class="erstellen_überschrift">Daten für Rückfragen</h3>
+            
+                <label>Nachname: 
+                <input name="Nachname" type="text" id="div-lastname" placeholder="Nachname" class="smallfield" title="Bitte geben Sie Ihren Vornamen ein"required>
+                </label>
+        
+                <label>Vorname:
+                <input name="Vorname" type="text" id="div-firstname" placeholder="Vorname" class="smallfield" title="Bitte geben Sie Ihren Nachname ein" required>
+                </label>
+        
+                <br>
+                <label>E-Mail:
+                <input name="EMail" type="email" id="div-email" placeholder="E-Mail" class="smallfield" title="Bitte geben Sie eine valide EMail an" required>
+                </label>
+                
+            
+                <input name="Lat" type="text" id="div-lat" placeholder="lat" class="smallfield" hidden readonly>
+                <input name="Lng" type="text" id="div-lng" placeholder="lng" class="smallfield" hidden readonly>
+                <br>
+                <input name="Einverständnis" type="checkbox" style="margin-left: 1%; padding-left: 1%;" title="Bitte bestätigen Sie" required>
+                Hiermit erklären Sie sich einverstanden mit der Verarbeitung Ihrer Daten.</br>
+                Genauere Informationen wie wir Ihre Daten nutzen, finden Sie <a href="datenschutz.html">hier</a>
+            </div>
+            <div class="info_bild">
+                <h3 class="erstellen_überschrift">Zusammenfassung </h3>
+                <button class="erstellen-button" type="reset" >Zusammenfassung zurücksetzen</button>
+                <button class="erstellen-button" type="submit">Meldung zusammenfassen</button>
+            </div>
+        </div>
+        </form>
+    </div>
+
+        <div id="footer"></div>
+        
+    </body>
+</html>

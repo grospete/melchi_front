@@ -1,0 +1,565 @@
+.gridIndex{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-gap: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 2%;
+    /* min-height: calc(100vh - 120px - 60px); */
+    min-height: 80vh;
+}
+
+.preview-background{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.back{
+    background: #7acef7;
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.home-button{
+    float:left;
+    height: 80px;
+    width: 120px;
+    margin-right: 10px;
+    margin-top: 5px;
+    position: left;
+    background-color: #7acef7;
+    border:none;
+}
+.zsm-back{
+    text-decoration: none;
+    color: white;
+    background-color: #7acef7;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    
+}
+.zsm-button{
+    height: 80px;
+    width: 45%;
+    margin: 1%;
+    background-color: #7acef7;
+    color: white;
+    font-weight: bold;
+}
+.zsm-button:hover{
+    opacity: 0.9;
+    color: blue;
+}
+.logo-home{
+    float:left;
+    height: 90px;
+    padding-left: 15%;
+    position: inline;
+
+}
+.logo{
+    float:left;
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: top;
+}
+.title{
+    float:left;
+    margin-top: 40px;
+    font-size: 50px;
+    position: top;
+    
+    
+}
+
+
+.startseite{
+    padding-left: 10px;
+    background-color:  #7acef7;
+    color:white;   
+}
+.mapStyle{
+    width:100%;
+    height: 100%;
+    max-height: 540px;
+    float:left;
+}
+.map_style_einsehen{
+    width:100%;
+    height: 100%;
+    max-height: 550px;
+    float:left;
+}
+.info{
+    background-color: white;
+}
+.div-info{
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+}
+.info_einsehen{
+    background-color: white;
+}
+.info_bild{
+    background-color: white;
+    padding-bottom: 2%;
+}
+.input_file{
+    margin: 2%;
+}
+.startText{
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+.meldung_erstellen{
+    color: white;
+    background-color: #7acef7;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meldungen_einsehen_style{
+    width: 100%;
+    height: 100%;
+    max-height: 80vh;
+    grid-gap: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 2%;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    justify-content: center;
+    align-items: center;
+}
+.meldung_einsehen{
+    color: white;
+    background-color: #7acef7;
+    width: 100%;
+    height: 80px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meldungPicture{
+    width: 70px;
+    height: 70px;
+    float:left;
+}
+.meldung_einsehen_text{
+    margin-left: 3%;
+    font-size: 24px;
+    float:right;
+    font-weight: normal;
+}
+.meldung_erstellen_text{
+    margin-left: 5%;
+    margin-top: 1.5%;
+    font-size: 24px;
+    float:right;
+}
+
+.footerStyle{
+    width:100%;
+    margin-top: 3%;
+    color: white;
+    background-color: #7acef7;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+ }
+
+ .footerOne{
+     width:100%;
+     color: white;
+     background-color: #7acef7;
+     float:left;
+     height: 60px;
+     cursor: pointer;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+     bottom: 0;
+     padding: 0;     
+ }
+ .datenschutz_actionfield{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+ }
+ .ds{
+    margin-right: 10%;
+    font-size: 20px;
+    color: white;
+    float: left;
+    
+   
+ }
+ .impressum_actionfield{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+ }
+ .imp{
+    margin-left: 10%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    float:right;
+ }
+ .boxes{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    font-size: 20px;
+    color: white;
+    background-color:#7acef7;
+    padding-left: 2%;
+    padding-right: 2%;
+    min-width: 40%;
+ }
+
+ .beschreibung{
+    margin: 2%;
+    margin-left: 5%;
+    width: 90%;
+    height: 90px;
+    position: top;
+    font-variant-position:top;
+ }
+ .display_image_style{
+    width: 375px;
+    height: 211px;
+    border: 1px solid black;
+    background-position:center;
+    background-size:cover;
+    margin-left: 20%;
+ }
+ .conclusion_image_style{
+    width: 375px;
+    height: 211px;
+    background-color: white;
+    border: 1px solid black;
+    background-position:center;
+    background-size:cover;
+    margin-left: 20%;
+    margin:2%;
+ }
+ .smallfield{
+    margin: 2%;
+ }
+ .imageOutput{
+    margin-bottom: 5%;
+ }
+ .style-img{
+    margin-left: 20%;
+    margin: 2%;
+    background-color: white;
+    height: 100px;
+    width: 100px;
+ }
+ .conclusion_container{
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    font-size: 20px;
+    line-height: 200%;
+    
+ }
+ .meldungen_einsehen{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr;
+    grid-gap: 2%;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 2%;
+ }
+ .meldungen_scroll_container{
+    scrollbar-width: normal;
+    float:left;
+    width: 100%;
+    overflow-y: scroll;
+    height:100%;
+    max-height: 550px;
+
+}
+ .meldung_container_style{
+    margin-top: 10px;
+    background-color: white;
+    height: 430px;
+    width:100%;
+}
+.meldung_container_style:hover{
+    opacity: 0.95;
+}
+.meldung_container_style_bearbeiten{
+    margin-top: 10px;
+    background-color: white;
+    height: 475px;
+    width:100%;
+}
+.meldung_container_style_bearbeiten:hover{
+    opacity: 0.95;
+}
+.meldung_container_style_einsehen{
+    margin-top: 10px;
+    background-color: white;
+    height: 270px;
+    width:100%;
+}
+.meldung_container_style_einsehen:hover{
+    opacity: 0.95;
+}
+.meldung_container_style_map{
+    background-color: white;
+    height: 180px;
+    width:100%;
+}
+.meldung_title{
+    color: white;
+    background-color: #7acef7;
+    height: 13%;
+    font-size: 150%;
+    padding-left: 1%;
+}
+.meldung_image_map{
+    margin: 0.5%;
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+.meldung_text_map{
+    float: right;
+    width: 100px;
+    border-left: 0%;
+}
+ .meldung_container_image_style{
+    margin: 2%;
+    width: 200px;
+    height:200px;
+    float: left;
+    padding: 0.5%;
+}
+.meldung_image_style{
+    width: 100%;
+    height:100%;
+ }
+
+.meldung_container_text_style{
+ float:right;
+
+}
+.meldung_text_style{
+ line-height: 120%;
+ margin: 2%;
+}
+
+.erstellen_überschrift{
+    padding-left: 10px;
+    background-color:  #7acef7;
+    color:white;   
+    margin-top: 2%;
+}
+.meldungen_scroll_container_erstellen{
+    scrollbar-width: normal;
+    width: 100%;
+    overflow-y: scroll;
+    height: 80vh;
+    max-height: 550px;
+}
+.image-description{
+    padding-left: 2%;
+}
+.result-show{
+    margin: 2%;
+    margin-left: 5%;
+    width: 90%;
+    position: top;
+    font-variant-position:top;
+    display:inline;
+ }
+.result-lastname{
+    margin: 2%;
+    margin-left: 2%;
+    display:inline;
+ }
+.result-firstname{
+    margin: 2%;
+    margin-left: 3.5%;
+    display:inline;
+ }
+.result-email{
+    margin: 2%;
+    margin-left: 6%;
+    display:inline;
+ }
+ .beschreibung-output{
+    margin: 2%;
+    margin-left: 5%;
+    width: 90%;
+    height: 140px;
+    position: top;
+    font-variant-position:top;
+ }
+ .overview{
+    display:flex;
+    min-height: 70vh;
+    width: 40%;
+    position: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 2%;
+ }
+ .index_benutzer_überschrift{
+    padding-left: 10px;
+    background-color:  #7acef7;
+    color:white;
+    position: top;
+    min-height: 5vh;
+}
+.div-label{
+    padding-left:10px;
+    padding-right:20px;
+}
+.div-input{
+    width: 100%;
+}
+.div-anmeldung{
+    margin-left: 42%;
+    background-color: #7acef7;
+    color: white;
+    border: #7acef7;
+    width: 20%;
+    height: 70px;
+}
+.div-buttons{
+    margin-top: 2%;
+}
+
+.meldung_einsehen_benutzer{
+    color: white;
+    background-color: #7acef7;
+    width: 100%;
+    height: 40%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meldung_erstellen_benutzer{
+    margin-bottom:7%;
+    color: white;
+    background-color: #7acef7;
+    width: 100%;
+    height: 40%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meldung_picture_benutzer{
+    width: 140px;
+    height: 140px;
+    float:left;
+}
+.meldung_erstellen_text_benutzer{
+    margin-left: 5%;
+    margin-top: 1.5%;
+    font-size: 250%;
+    float:right;
+}
+
+.meldung_einsehen_text_benutzer{
+    margin-left: 3%;
+    font-size: 250%;
+    float:right;
+    font-weight: normal;
+}
+.div-delete{
+    background-color: #7acef7;
+    color: white;
+    border: none;
+    padding: 1.5%;
+    margin: 1%;
+    float:right;
+}
+.erstellen-button{
+    background-color: #7acef7;
+    color: white;
+    border:none;
+    margin-left: 1%;
+}
+.einreichen-button{
+    background-color: #7acef7;
+    color: white;
+    border:none;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    padding: 0.6%;
+}
+.meldung_bearbeiten{
+    color: white;
+    background-color: #7acef7;
+    width: 20%;
+    height: 8%;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline;
+    margin-left: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 0.7%;
+}
+.meldung_bearbeiten_text{
+    text-decoration: none;
+    display: inline;
+}
+.kommentar-style{
+    margin-left: 3%;
+    width: 90%;
+    
+}
+.kommentar-style-input{
+    display: inline-block; /* or inline-block, at least its a block element */
+    width: 90%; /* or width is certain by parent element */
+    height: auto; /* height cannot be defined */
+    word-break: break-all; /*  */
+    word-wrap: break-word; /* if you want to cut the complete word */
+    white-space: normal; /* be sure its not 'nowrap'! ! ! :/ */
+    margin-left: 3%;
+}
+    :placeholder-shown {
+        font-style: italic;
+    }
+.beschreibung-style{
+    display: inline-block; /* or inline-block, at least its a block element */
+    width: 90%; /* or width is certain by parent element */
+    height: auto; /* height cannot be defined */
+    word-break: break-all; /*  */
+    word-wrap: break-word; /* if you want to cut the complete word */
+    white-space: normal; /* be sure its not 'nowrap'! ! ! :/ */
+    margin-left: 3%;
+}

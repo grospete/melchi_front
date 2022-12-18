@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zusammenfassung der Meldung</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+        <script defer src="js/header.js"></script>
+        <script defer src="js/footerone.js"></script>
+    
+</head>
+<body background="img/back.jpg" class="preview-background">
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <div id="header"></div>
+    <div class="gridIndex">
+        <div id="map" class="mapStyle"></div>
+        <div class ="meldungen_scroll_container_erstellen">
+            <form action="abschluss.html" method="POST" enctype="multipart/form-data">
+            <div class="info" id="form-results">
+                <h3 class="startseite">Bild des Vorfalls</h3>
+                    <img class="conclusion_image_style" id="encodeImage">
+                    <div class="info">
+                        <h3 class="erstellen_überschrift">Kategorie des Vorfalls: </h3>
+                        <p  class="result-show"  id="div-radio-output"></p>
+                    </div>
+                    <div class="info">
+                        <h3 class="erstellen_überschrift">Beschreibung des Vorfalls</h3>
+                        <textarea class="beschreibung-output"  id="div-description-output" readonly></textarea>
+                    </div>
+                    <div class="info">
+                        <h3 class="erstellen_überschrift">Daten für Rückfragen</h3>
+                        
+                        <label class="result-show">Nachname:  
+                            <p id="div-lastname-output" class="result-lastname"></p>
+                        </label>
+                        <br>
+                        <label class="result-show">Vorname: 
+                            <p id="div-firstname-output" class="result-firstname"></p>
+                        </label>
+                        <br>                    
+                        <label class="result-show">E-Mail:
+                            <p id="div-email-output" class="result-email"></p>
+                        </label>
+                        <p></p>
+                    </div>
+            </div>
+            
+                <div class="info">
+                    <h3 class="erstellen_überschrift">Meldung Final Einreichen </h3>
+                        <a class="meldung_bearbeiten"href ="index.html"><p class="meldung_bearbeiten_text">Meldung Abbrechen</p></a>
+                        <button class="einreichen-button" type="submit">Meldung einreichen</button>
+                        <br>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="footerone"></div>
+    
+    <script src="js/zusammenfassung.js"></script>
+    <script src="js/map_insert.js"></script>
+    <script>
+        const form_results = document.getElementById("form-results");
+        console.log(form_results);
+
+        console.log("Test");
+        //insert the endpoint
+        fetch('https://httpbin.org/post', {
+            method: "POST",
+            body: form_results,
+        })
+            .then(res => res.json())
+            .then(res => console.log(res));
+    </script>
+</body>
+</html>
