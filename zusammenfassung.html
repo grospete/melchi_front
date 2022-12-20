@@ -56,7 +56,7 @@
                 <div class="info">
                     <h3 class="erstellen_überschrift">Meldung Final Einreichen </h3>
                         <a class="meldung_bearbeiten"href ="index.html"><p class="meldung_bearbeiten_text">Meldung Abbrechen</p></a>
-                        <button class="einreichen-button" type="submit">Meldung einreichen</button>
+                        <button class="einreichen-button" type="submit" onclick="performPost();">Meldung einreichen</button>
                         <br>
                 </div>
             </form>
@@ -67,17 +67,14 @@
     <script src="js/zusammenfassung.js"></script>
     <script src="js/map_insert.js"></script>
     <script>
-        const form_results = document.getElementById("form-results");
-        console.log(form_results);
-
-        console.log("Test");
-        //insert the endpoint
-        fetch('https://httpbin.org/post', {
-            method: "POST",
-            body: form_results,
-        })
-            .then(res => res.json())
-            .then(res => console.log(res));
+        console.log(updateObject);
+        function performPost(){
+            fetch("https://melchi.onrender.com/notes", {
+                method: "post",
+                body: JSON.stringify(updateObject)
+            })
+            .then( (response) => {});
+        };
     </script>
 </body>
 </html>
