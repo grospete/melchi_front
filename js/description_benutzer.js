@@ -1,4 +1,7 @@
-description_benutzer.innerHTML=`
+/** 
+ * @module description_benutzer legt den Inhalt in dem Feld von Benutzer
+*/
+description_benutzer.innerHTML = `
 <div class="div-info">
 <h3 class="startseite">Einführung in den Mängelmelder</h3>
 <p class="startText">Ob wackelnde Gehwegplatten, umgefallene Verkehrszeichen, überfüllte Mülleimer, flackernde Straßenlaternen oder wilde Müllablagerungen - 

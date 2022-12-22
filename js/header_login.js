@@ -1,4 +1,4 @@
-header_login.innerHTML=`
+header_login.innerHTML = `
 <div class="back">
         <nav>
             <a href="index_benutzer.html"><button class="home-button"><img src="img/Homebutton.png" class="logo-home"></button></a>

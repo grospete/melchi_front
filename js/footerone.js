@@ -1,4 +1,4 @@
-footerone.innerHTML=`
+footerone.innerHTML = `
 <div class="footerOne">
 <a href="datenschutz.html" class="datenschutz_actionfield">
 <div class="ds">

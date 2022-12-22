@@ -1,4 +1,4 @@
-footer_benutzer.innerHTML=`
+footer_benutzer.innerHTML = `
 <div class="footerOne">
 <a href="datenschutz_benutzer.html" class="datenschutz_actionfield">
 <div class="ds">

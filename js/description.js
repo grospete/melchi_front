@@ -1,20 +1,23 @@
-description.innerHTML=`
+description.innerHTML = `
 <div class="div-info">
 <h3 class="startseite">Willkommen</h3>
-<p class="startText">Ob wackelnde Gehwegplatten, umgefallene Verkehrszeichen, überfüllte Mülleimer, flackernde Straßenlaternen oder wilde Müllablagerungen - 
-    teilen Sie Ihre Entdeckungen schnell und unkompliziert mit. Unterstützen Sie dabei, Schäden zu entdecken und Mängel zu beheben.
+<p class="startText">
+    Wilder Sperrmüll, blockierte Straßen, neue Schlaglöcher oder auch flackernde Straßenlaternen. 
+    <br>
+    Egal was Ihnen in Ludwigshafen aufgefallen ist, teilen Sie es uns mit. Damit können Sie helfen die Lebensqualität in Ludwigshafen spürbar zu erhöhen. Für ein gesundes Miteinander.
     <br><br>
-    Das 115-ServiceCenter der Stadt Mannheim freut sich über Ihre Hinweise und leitet diese unverzüglich an die zuständigen Fachämter der Stadt weiter.
+    Die Verwaltung der Stadt Ludwigshafen freut sich über Ihre Anmerkungen und leitet diese umgehend an die zuständigen Behörden weiter.
     <br><br>
-    Ihre Hinweise können Sie sowohl über diese Internetplattform als auch über mobile Endgeräte (Apps für iOS und Android) direkt von unterwegs und 
-    unabhängig unserer Servicezeiten einreichen.
+    Meldungen können Sie um jede Uhrzeit über diese Anwendung erstellen. Damit sind Sie unabhängig von unseren Servicezeiten. Unsere Mitarbeiter setzen
+    sich anschließend mit Ihren Hinweisen auseinander.
     <br><br>
-    Bitte beachten Sie: Damit Ihr Anliegen noch besser bearbeitet werden kann und die Stadtverwaltung bei Rückfragen direkt auf Sie zukommen kann, 
-    ist die Angabe einer E-Mail-Adresse seit Kurzem verpflichtend.
+    Damit wir noch besser auf Ihre Anliegen eingehen können, hinterlassen Sie uns bitte Ihre Kontaktdaten, wie vollständigen Namen und EMail im Formular.
+    <br>
+    Dadurch können wir bei Fragen auf Sie zurückkommen.
+    <br><br>
+    Sie möchten noch Anregungen mitteilen oder haben eine allgemeine Fragestellung? Dann schreiben Sie uns an folgende E-Mailadresse: stadtverwaltung@ludwigshafen.de.
     <br><br>
     Vielen Dank!
-    <br><br>
-    Sie möchten noch Anregungen mitteilen oder haben eine allgemeine Fragestellung? Dann schreiben Sie uns an folgende E-Mailadresse: 115@mannheim.de.
 </p>
 </div>
 `

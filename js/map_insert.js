@@ -1,5 +1,7 @@
 let mapOptions = {
     center:[49.4766, 8.4334],
+    maxBounds: [[49.4334, 8.3441],[49.5390,8.4682]],
+    minZoom: 13,
     zoom: 14
 }
 let map = new L.map('map', mapOptions);

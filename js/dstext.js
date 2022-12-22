@@ -1,4 +1,4 @@
-dstext.innerHTML=`
+dstext.innerHTML = `
 <div class="info">
 <h3 class="startseite">Startseite</h3>
 <p class="startText">Ob wackelnde Gehwegplatten, umgefallene Verkehrszeichen, überfüllte Mülleimer, flackernde Straßenlaternen oder wilde Müllablagerungen - 

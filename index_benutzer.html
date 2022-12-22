@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anmeldung</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
@@ -21,24 +20,24 @@
     <div class="conclusion_container">
         <div class="info">
             <form id="login" action="menu_benutzer.html" method="GET" enctype="multipart/form-data">
-            <h3 class="index_benutzer_überschrift">Anmeldung</h3>
-            <br>
-            <label class="div-label">E-Mail:
+                <h3 class="index_benutzer_überschrift">Anmeldung</h3>
                 <br>
-                <input name="changeLater" type="email" id="changeLater" size="100"class="div-input" placeholder="E-Mail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
-            </label>
-            <br>
-            <br>
-            <label class="div-label">Passwort:
+                <label class="div-label">E-Mail:
+                    <br>
+                    <input name="changeLater" type="email" id="changeLater" size="100"class="div-input" placeholder="E-Mail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
+                </label>
                 <br>
-                <input name="changeLater" type="password" id="changeLater" size="100" class="div-input" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Muss mindestens eine Zahl, einen kleinen und einen großen Buchstaben beinhalten, sowie Sonderzeichen und mindestens 8 Zeichen lang sein" placeholder="Passwort" required>
-            </label>
-            <br>
-            <br>
-            <button type="submit" class="div-anmeldung" type="submit">Anmelden</button>
-            <br>
-            <br>
-        </form>
+                <br>
+                <label class="div-label">Passwort:
+                    <br>
+                    <input name="changeLater" type="password" id="changeLater" size="100" maxlength="32" class="div-input" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*?[0-9])(?=.*?[!@#$%^&*+`~'=?\|\]\[\(\)\-<>/]).{8,}" title="Muss mindestens eine Zahl, einen kleinen und einen großen Buchstaben beinhalten, sowie ein Sonderzeichen und mindestens 8 Zeichen lang sein" placeholder="Passwort" required>
+                </label>
+                <br>
+                <br>
+                <button type="submit" class="div-anmeldung" type="submit">Anmelden</button>
+                <br>
+                <br>
+            </form>
         </div>
     </div>
         <footer id="footer_login"></footer>

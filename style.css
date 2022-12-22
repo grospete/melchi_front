@@ -335,7 +335,7 @@
 }
 .meldung_container_style_map{
     background-color: white;
-    height: 180px;
+    height: 210px;
     width:100%;
 }
 .meldung_title{
@@ -355,6 +355,16 @@
     float: right;
     width: 100px;
     border-left: 0%;
+}
+.meldung_id_map{
+    float: right;
+    width: 100px;
+    border-left: 0%;
+    border-color: white;
+    resize: none;
+}
+.meldung_id_map:hover{
+    border-color:white;
 }
  .meldung_container_image_style{
     margin: 2%;

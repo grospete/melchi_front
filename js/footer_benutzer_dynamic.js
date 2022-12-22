@@ -1,4 +1,4 @@
-footer_benutzer_dynamic.innerHTML=`
+footer_benutzer_dynamic.innerHTML = `
 <div class="footerStyle">
     <a href="datenschutz_benutzer.html" class="datenschutz_actionfield">
         <div class="ds">
