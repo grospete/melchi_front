@@ -51,7 +51,7 @@ async function sendPost() {
     fetch('https://melchi.onrender.com/notes/', {
         method: "POST",
         mode: "cors",
-        headers:{
+        headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
@@ -60,9 +60,11 @@ async function sendPost() {
             "nachname": window.localStorage.getItem("lastname")
         })
     })
-    .then ( (response) => {
-        console.log(response);
-    });
-console.log("Test");
+        .then((response) => {
+            console.log(response);
+        });
+
+        debugger;
+
 }
 
