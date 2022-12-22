@@ -62,9 +62,7 @@ async function sendPost() {
     })
     .then ( (response) => {
         console.log(response);
-        debugger;
     });
 console.log("Test");
-debugger;
 }
 
